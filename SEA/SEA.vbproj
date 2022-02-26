@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95714761-C2CA-4C4C-A84E-1ED08E0C89B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SEA.My.MyApplication</StartupObject>
+    <RootNamespace>SEA</RootNamespace>
+    <AssemblyName>SEA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Lenovo\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SEA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SEA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adjavaexams.Designer.vb">
+      <DependentUpon>adjavaexams.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adjavaexams.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adjavaobj.Designer.vb">
+      <DependentUpon>adjavaobj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adjavaobj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="advbexams.Designer.vb">
+      <DependentUpon>advbexams.vb</DependentUpon>
+    </Compile>
+    <Compile Include="advbexams.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="advbobj.Designer.vb">
+      <DependentUpon>advbobj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="advbobj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="connection.vb" />
+    <Compile Include="cplusexam.Designer.vb">
+      <DependentUpon>cplusexam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cplusexam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cplusobj.Designer.vb">
+      <DependentUpon>Cplusobj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cplusobj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Htmlobj.Designer.vb">
+      <DependentUpon>Htmlobj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Htmlobj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HtmlQuestion.Designer.vb">
+      <DependentUpon>HtmlQuestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlQuestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Java Objectives.Designer.vb">
+      <DependentUpon>Java Objectives.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Java Objectives.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JavaExams.Designer.vb">
+      <DependentUpon>JavaExams.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JavaExams.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer Page.Designer.vb">
+      <DependentUpon>Lecturer Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Questions.Designer.vb">
+      <DependentUpon>Questions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Questions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeaAdmin.Designer.vb">
+      <DependentUpon>SeaAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeaAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seaLecturer Page.Designer.vb">
+      <DependentUpon>seaLecturer Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="seaLecturer Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seaLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seaLogin.Designer.vb">
+      <DependentUpon>seaLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="seaStudent Page.Designer.vb">
+      <DependentUpon>seaStudent Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="seaStudent Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section A.Designer.vb">
+      <DependentUpon>Section A.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Section A.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetQuestions.Designer.vb">
+      <DependentUpon>SetQuestions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetQuestions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator.Designer.vb">
+      <DependentUpon>Administrator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vb exams.Designer.vb">
+      <DependentUpon>vb exams.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vb exams.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vbobj.Designer.vb">
+      <DependentUpon>vbobj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vbobj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Answers.Designer.vb">
+      <DependentUpon>View Answers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View Answers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Objs.Designer.vb">
+      <DependentUpon>View Objs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View Objs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="adjavaexams.resx">
+      <DependentUpon>adjavaexams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adjavaobj.resx">
+      <DependentUpon>adjavaobj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="advbexams.resx">
+      <DependentUpon>advbexams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="advbobj.resx">
+      <DependentUpon>advbobj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cplusexam.resx">
+      <DependentUpon>cplusexam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cplusobj.resx">
+      <DependentUpon>Cplusobj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Htmlobj.resx">
+      <DependentUpon>Htmlobj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HtmlQuestion.resx">
+      <DependentUpon>HtmlQuestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Java Objectives.resx">
+      <DependentUpon>Java Objectives.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JavaExams.resx">
+      <DependentUpon>JavaExams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer Page.resx">
+      <DependentUpon>Lecturer Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Questions.resx">
+      <DependentUpon>Questions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeaAdmin.resx">
+      <DependentUpon>SeaAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seaLecturer Page.resx">
+      <DependentUpon>seaLecturer Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seaLogin.resx">
+      <DependentUpon>seaLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seaStudent Page.resx">
+      <DependentUpon>seaStudent Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section A.resx">
+      <DependentUpon>Section A.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetQuestions.resx">
+      <DependentUpon>SetQuestions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator.resx">
+      <DependentUpon>Administrator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vb exams.resx">
+      <DependentUpon>vb exams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vbobj.resx">
+      <DependentUpon>vbobj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Answers.resx">
+      <DependentUpon>View Answers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Objs.resx">
+      <DependentUpon>View Objs.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
